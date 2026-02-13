@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+
+:root {
+    color-scheme: dark;
+}
+
+
+/* Reusable classes */
+.container-page {
+    @apply min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white;
+}
+
+.card {
+    @apply rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-soft;
+}
+
+.btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 active:bg-blue-700 transition font-medium;
+}
+
+.badge {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+.skeleton {
+    @apply animate-pulse rounded-lg bg-white/10;
+}
